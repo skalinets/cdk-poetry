@@ -12,7 +12,7 @@ class CdkPoetryStack(Stack):
         super().__init__(scope, construct_id, **kwargs)
         func = _lambda.Function(self, "test-function", 
                                 runtime=_lambda.Runtime.PYTHON_3_10,
-                                code=_lambda.Code.from_asset('cdk_poetry/lambdas/hello_world'),
+                                code=_lambda.Code.from_asset('cdk_poetry/lambdas/hello_world/hello_world'),
                                 handler="index.handler"
                        )
 

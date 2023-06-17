@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "hello-world"
+name = "tests"
 version = "0.1.0"
 description = ""
 authors = ["Serhii Kalinets <kalinets@gmail.com>"]
-packages = [{include = "hello_world"}]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+hello-world = {path = "../cdk_poetry/lambdas/hello_world", develop = true}
 
 
 [build-system]
