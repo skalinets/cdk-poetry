@@ -1,13 +1,12 @@
 [tool.poetry]
-name = "hello-world"
+name = "common"
 version = "0.1.0"
 description = ""
 authors = ["Serhii Kalinets <kalinets@gmail.com>"]
-packages = [{include = "hello_world"}]
+packages = [{include = "common"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-common = {path = "../common", develop = true}
 
 
 [build-system]

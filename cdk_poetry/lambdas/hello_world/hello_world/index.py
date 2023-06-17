@@ -1,4 +1,5 @@
+from common.helper import get_answer
 def handler(event, context):
-    print("GGGGGGGGGGGg")
-    return "==="
+    f = get_answer("42")
+    return(f"42: {f}")
     # return {"statusCode": 200, "body": "hello"}
