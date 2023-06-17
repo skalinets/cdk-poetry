@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cdk-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Serhii Kalinets <kalinets@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cdk_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+constructs = "^10.2.52"
+aws-cdk-lib = "^2.84.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+pytest-watch = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
