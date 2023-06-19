@@ -21,14 +21,14 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "aws-cdk-asset-awscli-v1"
-version = "2.2.193"
+version = "2.2.195"
 description = "A library that contains the AWS CLI for use in Lambda Layers"
 category = "main"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk.asset-awscli-v1-2.2.193.tar.gz", hash = "sha256:4131c794ca6457cd0903c7f6aea233edd4b7ffbe361ccfd78e40dc9ab1d6199a"},
-    {file = "aws_cdk.asset_awscli_v1-2.2.193-py3-none-any.whl", hash = "sha256:e30e84d9bdb3532da5dae5b15163712bd2e48e754797e971a7edbc2db93ab163"},
+    {file = "aws-cdk.asset-awscli-v1-2.2.195.tar.gz", hash = "sha256:6bc2fe4b9c7085fac671d060edee59aab6951fcc4ca20ecfeffa83a639b3d49b"},
+    {file = "aws_cdk.asset_awscli_v1-2.2.195-py3-none-any.whl", hash = "sha256:464914b927be7dec79aac20b44b51381200e77607fd4c800599273f1d6bc0abd"},
 ]
 
 [package.dependencies]
@@ -145,18 +145,18 @@ url = "cdk_poetry/lambdas/common"
 
 [[package]]
 name = "constructs"
-version = "10.2.52"
+version = "10.2.54"
 description = "A programming model for software-defined state"
 category = "main"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "constructs-10.2.52-py3-none-any.whl", hash = "sha256:2689938060479d91961533688a7ad8a9d6e3c41b9ddb5ba940a81645452bc6cb"},
-    {file = "constructs-10.2.52.tar.gz", hash = "sha256:88f8cd202f0a2b088ba43122ce306915b7deda52be785388bf3d31608e274d6a"},
+    {file = "constructs-10.2.54-py3-none-any.whl", hash = "sha256:07aca3044dfe3c141890a35b390c1585f0c70a6da2f38e34cfd8abefe91a9889"},
+    {file = "constructs-10.2.54.tar.gz", hash = "sha256:bc1367ce6d922051cdccfcc31fda1b2a53e9e4480b45e8a81851be59fdaa7daf"},
 ]
 
 [package.dependencies]
-jsii = ">=1.83.0,<2.0.0"
+jsii = ">=1.84.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
@@ -266,14 +266,14 @@ files = [
 
 [[package]]
 name = "pluggy"
-version = "1.0.0"
+version = "1.1.0"
 description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 files = [
-    {file = "pluggy-1.0.0-py2.py3-none-any.whl", hash = "sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3"},
-    {file = "pluggy-1.0.0.tar.gz", hash = "sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159"},
+    {file = "pluggy-1.1.0-py3-none-any.whl", hash = "sha256:d81d19a3a88d82ed06998353ce5d5c02587ef07ee2d808ae63904ab0ccef0087"},
+    {file = "pluggy-1.1.0.tar.gz", hash = "sha256:c500b592c5512df35622e4faf2135aa0b7e989c7d31344194b4afb9d5e47b1bf"},
 ]
 
 [package.extras]
