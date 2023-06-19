@@ -41,3 +41,17 @@ To test the function, use
 aws lambda invoke --function-name test-docker-function out --log-type Tail \
    --query 'LogResult' --output text |  base64 -d
 ```
+
+# Current issues and concerns
+
+Currently code works, however there are some items looking suboptimal. 
+
+- *Nested package directories*. If we want to create a package, we need to 
+create a nested directory with the same name, eg. `package1/package1`. 
+
+- *Explicit install of dependencies*. See [Dockerfile](./cdk_poetry/lambdas/hello_world/Dockerfile#14) – if lines 14-15 are removed, the `common` package will be installed, 
+however its dependencies, ie pendulum won't. 
+
+- *Suboptimal Dockerfile*. It is not obvious how to add multistage builds here
+because there is more than one `pyproject.toml`. Also `.dockerignore` might be
+helpful.
