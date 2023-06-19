@@ -29,3 +29,15 @@ pytest  # for single run
 # OR
 ptw # for live reload
 ```
+
+## How to deploy
+
+``` bash
+cdk deploy
+```
+
+To test the function, use 
+``` bash 
+aws lambda invoke --function-name test-docker-function out --log-type Tail \
+   --query 'LogResult' --output text |  base64 -d
+```

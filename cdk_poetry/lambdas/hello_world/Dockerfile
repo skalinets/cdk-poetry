@@ -11,6 +11,9 @@ RUN mkdir /app
 COPY /common /app/common
 COPY /hello_world /app/hello_world
 
+WORKDIR /app/common
+RUN poetry install
+
 WORKDIR /app/hello_world
 RUN poetry install
 
