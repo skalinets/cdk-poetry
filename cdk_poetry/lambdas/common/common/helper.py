@@ -1,2 +1,8 @@
+import pendulum
+
+
 def get_answer(s):
-    return f"answer for {s} is 42"
+    now = pendulum.now("UTC")
+
+    d = now.to_iso8601_string()
+    return f"answer for {s} is {d}"
