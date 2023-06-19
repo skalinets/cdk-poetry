@@ -25,5 +25,7 @@ poetry install
 4. Run tests
 
 ``` bash
-pytest
+pytest  # for single run
+# OR
+ptw # for live reload
 ```
