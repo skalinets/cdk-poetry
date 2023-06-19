@@ -10,6 +10,8 @@ packages = [{include = "cdk_poetry"}]
 python = "^3.10"
 constructs = "^10.2.52"
 aws-cdk-lib = "^2.84.0"
+common = {path = "cdk_poetry/lambdas/common", develop = true}
+hello-world = {path = "cdk_poetry/lambdas/hello_world", develop = true}
 
 
 [tool.poetry.group.dev.dependencies]
