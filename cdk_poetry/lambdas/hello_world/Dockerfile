@@ -25,3 +25,6 @@ ENTRYPOINT [ "python", "-m", "awslambdaric" ]
 
 FROM base as hello_world
 CMD ["hello_world.index.handler"]
+
+FROM base as another_lambda
+CMD ["another_lambda.index.handler"]

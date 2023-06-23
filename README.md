@@ -38,7 +38,7 @@ cdk deploy
 
 To test the function, use 
 ``` bash 
-aws lambda invoke --function-name test-docker-function out --log-type Tail \
+aws lambda invoke --function-name test-docker-function-another_lambda out --log-type Tail \
    --query 'LogResult' --output text |  base64 -d
 ```
 
