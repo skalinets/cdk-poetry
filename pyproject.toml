@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "cdk_poetry"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 constructs = "^10.2.52"
 aws-cdk-lib = "^2.84.0"
 common = {path = "cdk_poetry/lambdas/common", develop = true}

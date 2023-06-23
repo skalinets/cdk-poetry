@@ -21,14 +21,14 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "aws-cdk-asset-awscli-v1"
-version = "2.2.195"
+version = "2.2.198"
 description = "A library that contains the AWS CLI for use in Lambda Layers"
 category = "main"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk.asset-awscli-v1-2.2.195.tar.gz", hash = "sha256:6bc2fe4b9c7085fac671d060edee59aab6951fcc4ca20ecfeffa83a639b3d49b"},
-    {file = "aws_cdk.asset_awscli_v1-2.2.195-py3-none-any.whl", hash = "sha256:464914b927be7dec79aac20b44b51381200e77607fd4c800599273f1d6bc0abd"},
+    {file = "aws-cdk.asset-awscli-v1-2.2.198.tar.gz", hash = "sha256:6a78b63439a2041fea59c73bb751b87b3415d4451e41a61a852b71ad99fa0e6b"},
+    {file = "aws_cdk.asset_awscli_v1-2.2.198-py3-none-any.whl", hash = "sha256:14a1e917a69e59ddbe559f35cf611b2a7421e42c3544cc7a5ab224387d41f3ab"},
 ]
 
 [package.dependencies]
@@ -72,14 +72,14 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "aws-cdk-lib"
-version = "2.84.0"
+version = "2.85.0"
 description = "Version 2 of the AWS Cloud Development Kit library"
 category = "main"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk-lib-2.84.0.tar.gz", hash = "sha256:cf79a526584c5fa694a5723dcd1dd4d90a0f28919ae93bc0a36b9d756145adfd"},
-    {file = "aws_cdk_lib-2.84.0-py3-none-any.whl", hash = "sha256:1a559f6edb02eb436b2749fd7a108e9e9e7e2de040a04b0400d48ba711f1fdc1"},
+    {file = "aws-cdk-lib-2.85.0.tar.gz", hash = "sha256:cbd13ec361a841077db0a0acb1d84c44c030ff198ad0a8e6d47760b3f8362ed4"},
+    {file = "aws_cdk_lib-2.85.0-py3-none-any.whl", hash = "sha256:b5b388c0478b39820d8facee6ed7b07a1e1e1e7c01dded3d17f86797fb8dddb3"},
 ]
 
 [package.dependencies]
@@ -105,8 +105,6 @@ files = [
 
 [package.dependencies]
 attrs = ">=20"
-exceptiongroup = {version = "*", markers = "python_version < \"3.11\""}
-typing_extensions = {version = ">=4.1.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
 bson = ["pymongo (>=4.2.0,<5.0.0)"]
@@ -135,7 +133,7 @@ version = "0.1.0"
 description = ""
 category = "main"
 optional = false
-python-versions = "^3.10"
+python-versions = "^3.11"
 files = []
 develop = true
 
@@ -148,14 +146,14 @@ url = "cdk_poetry/lambdas/common"
 
 [[package]]
 name = "constructs"
-version = "10.2.54"
+version = "10.2.57"
 description = "A programming model for software-defined state"
 category = "main"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "constructs-10.2.54-py3-none-any.whl", hash = "sha256:07aca3044dfe3c141890a35b390c1585f0c70a6da2f38e34cfd8abefe91a9889"},
-    {file = "constructs-10.2.54.tar.gz", hash = "sha256:bc1367ce6d922051cdccfcc31fda1b2a53e9e4480b45e8a81851be59fdaa7daf"},
+    {file = "constructs-10.2.57-py3-none-any.whl", hash = "sha256:b9447d4c9b17e73a9301331b53071b1fcc9cb0975ed02a65a6c91e4bb4f4ccf1"},
+    {file = "constructs-10.2.57.tar.gz", hash = "sha256:b4213f81d4083403ea50ab56406f1a0597c8d7d6613bd36c3bff8b6a65fb0b6c"},
 ]
 
 [package.dependencies]
@@ -175,27 +173,12 @@ files = [
 ]
 
 [[package]]
-name = "exceptiongroup"
-version = "1.1.1"
-description = "Backport of PEP 654 (exception groups)"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "exceptiongroup-1.1.1-py3-none-any.whl", hash = "sha256:232c37c63e4f682982c8b6459f33a8981039e5fb8756b2074364e5055c498c9e"},
-    {file = "exceptiongroup-1.1.1.tar.gz", hash = "sha256:d484c3090ba2889ae2928419117447a14daf3c1231d5e30d0aae34f354f01785"},
-]
-
-[package.extras]
-test = ["pytest (>=6)"]
-
-[[package]]
 name = "hello-world"
 version = "0.1.0"
 description = ""
 category = "main"
 optional = false
-python-versions = "^3.10"
+python-versions = "^3.11"
 files = []
 develop = true
 
@@ -304,14 +287,14 @@ pytzdata = ">=2020.1"
 
 [[package]]
 name = "pluggy"
-version = "1.1.0"
+version = "1.2.0"
 description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pluggy-1.1.0-py3-none-any.whl", hash = "sha256:d81d19a3a88d82ed06998353ce5d5c02587ef07ee2d808ae63904ab0ccef0087"},
-    {file = "pluggy-1.1.0.tar.gz", hash = "sha256:c500b592c5512df35622e4faf2135aa0b7e989c7d31344194b4afb9d5e47b1bf"},
+    {file = "pluggy-1.2.0-py3-none-any.whl", hash = "sha256:c2fd55a7d7a3863cba1a013e4e2414658b1d07b6bc57b3919e0c63c9abb99849"},
+    {file = "pluggy-1.2.0.tar.gz", hash = "sha256:d12f0c4b579b15f5e054301bb226ee85eeeba08ffec228092f8defbaa3a4c4b3"},
 ]
 
 [package.extras]
@@ -332,23 +315,21 @@ files = [
 
 [[package]]
 name = "pytest"
-version = "7.3.2"
+version = "7.4.0"
 description = "pytest: simple powerful testing with Python"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pytest-7.3.2-py3-none-any.whl", hash = "sha256:cdcbd012c9312258922f8cd3f1b62a6580fdced17db6014896053d47cddf9295"},
-    {file = "pytest-7.3.2.tar.gz", hash = "sha256:ee990a3cc55ba808b80795a79944756f315c67c12b56abd3ac993a7b8c17030b"},
+    {file = "pytest-7.4.0-py3-none-any.whl", hash = "sha256:78bf16451a2eb8c7a2ea98e32dc119fd2aa758f1d5d66dbf0a59d69a3969df32"},
+    {file = "pytest-7.4.0.tar.gz", hash = "sha256:b4bf8c45bd59934ed84001ad51e11b4ee40d40a1229d2c79f9c592b0a3f6bd8a"},
 ]
 
 [package.dependencies]
 colorama = {version = "*", markers = "sys_platform == \"win32\""}
-exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11\""}
 iniconfig = "*"
 packaging = "*"
 pluggy = ">=0.12,<2.0"
-tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
 testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
@@ -407,18 +388,6 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 files = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
-]
-
-[[package]]
-name = "tomli"
-version = "2.0.1"
-description = "A lil' TOML parser"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
-    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 
 [[package]]
@@ -491,5 +460,5 @@ watchmedo = ["PyYAML (>=3.10)"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.10"
-content-hash = "14176fd750ef8ba39fd78848176b39a2c137f4b931705734518d5dda0c226452"
+python-versions = "^3.11"
+content-hash = "061919eb7d52ff46411e9c46fcd51474da625e79c3c1c6a915ca8a747f91f470"
