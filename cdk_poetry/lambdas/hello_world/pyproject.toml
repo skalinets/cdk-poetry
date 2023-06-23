@@ -3,7 +3,7 @@ name = "hello-world"
 version = "0.1.0"
 description = ""
 authors = ["Serhii Kalinets <kalinets@gmail.com>"]
-packages = [{include = "hello_world"}]
+packages = [{include = "hello_world"}, {include = "another_lambda"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

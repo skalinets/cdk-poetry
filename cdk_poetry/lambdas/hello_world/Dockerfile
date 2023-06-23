@@ -10,7 +10,7 @@ COPY /hello_world /app/hello_world
 WORKDIR /app/hello_world
 RUN poetry install
 
-FROM python:3.11-slim
+FROM python:3.11-slim AS base
 
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
@@ -23,4 +23,5 @@ RUN python -m pip install awslambdaric
 
 ENTRYPOINT [ "python", "-m", "awslambdaric" ]
 
+FROM base as hello_world
 CMD ["hello_world.index.handler"]

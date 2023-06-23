@@ -24,7 +24,11 @@ class CdkPoetryStack(Stack):
             code=_lambda.DockerImageCode.from_image_asset(
                 directory="./cdk_poetry/lambdas/",
                 file=f"hello_world/Dockerfile",
+                
                 platform=ecr_assets.Platform.LINUX_AMD64,
+                 
+                build_args={"--target": "hello_world"}
+                
             ),
         )
 
